@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Джигга!</title>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+    <!-- slick carousel -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+          integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+          crossorigin="anonymous">
+    <!-- main CSS -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="header">
+    <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-white position-relative container-xl">
+        <!-- left button -->
+        <button class="navbar-toggler pl-1" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation" id="leftToggling">
+            <span class="text-dark"><i class="fas fa-list-ul"></i></span>
+        </button>
+        <a class="navbar-brand font-weight-bold logo pt-lg-2 text-uppercase ml-3 ml-lg-1 pl-xl-1" href="index.html">
+            Jigga!
+        </a>
+        <!-- right button -->
+        <button class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarToggler-right"
+                aria-controls="navbarToggler-right" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-user-circle mr-1 user-photo"></i>
+        </button>
+        <!-- left -->
+        <div class="collapse navbar-collapse d-lg-flex justify-content-end position-absolute py-0 px-0 bg-white collapse-left container-xl"
+             id="navbarTogglerDemo01">
+            <button class="navbar-toggler text-left pt-2 px-0 ml-1" type="button" data-toggle="collapse"
+                    data-target="#navbarTogglerDemo01"
+                    aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation" id="leftCollapse">
+                <span class="navbar-toggler text-dark close-main pl-3 mb-4">&times;</span>
+            </button>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 pl-3 ml-1 d-lg-none">
+                <li class="nav-item active">
+                    <a class="nav-link pl-0" href="#">Главная<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link pl-0" href="#">Популярное</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link pl-0" href="#">Категории</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link pl-0" href="#">Популярное</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link pl-0" href="#">Категории</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link pl-0" href="#">Популярное</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link pl-0" href="#">Категории</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link pl-0" href="#">Популярное</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link pl-0" href="#">Категории</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link pl-0" href="#">Популярное</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link pl-0" href="#">Категории</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link pl-0" href="#">Популярное</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link pl-0" href="#">Категории</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link pl-0" href="#">Популярное</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link pl-0" href="#">Категории</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link pl-0" href="#">Популярное</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link pl-0" href="#">Категории</a>
+                </li>
+            </ul>
+            <div class="row mt-3 d-none d-lg-flex width-input">
+                <div class="col-12 pl-0">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text bg-white py-1"><i class="fas fa-search pl-1 text-muted"></i></span>
+                        </div>
+                        <input type="text" class="form-control py-1" placeholder="Поиск объявлений" aria-label="Поиск обьявлений" aria-describedby="button-addon">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-muted py-1 text-muted" type="button" id="button-addon">Найти</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-buttons d-flex flex-column flex-lg-row py-0 ml-3 ml-lg-0">
+                <a href="#" 
+                  class="ml-1 ml-lg-3 d-flex justify-content-center align-items-center text-muted align-self-start align-self-lg-center my-3 my-lg-0">
+                    <i class="fas fa-location-arrow align-self-center pr-1"></i> Местоположение
+                </a>
+                <a href="#" 
+                  class="btn btn-success ml-1 ml-lg-3 my-2 my-lg-0 py-4 py-sm-3 px-3 p-lg-1 d-flex flex-row justify-content-center align-items-center w-50 text-wrap">
+                    Разместить<br class="d-sm-none"> объявление
+                </a>
+                <a href="#" 
+                  class="dropleft ml-4 mr-lg-3 mr-xl-0 my-lg-0 px-0 align-self-center d-none d-lg-block border-transparent text-muted" 
+                  id="blockMenu">
+                    <i class="fas fa-user-circle mr-4 user-photo"></i>
+                </a>
+            </div>
+        </div>
+        <!-- right -->
+        <div class="d-lg-none collapse navbar-collapse position-absolute bg-transparent py-1 text-center collapse-right-profile pl-0"
+             id="navbarToggler-right">
+            <div class="row d-lg-none bg-white mb-5">
+                <div class="col-1 px-3 py-1 d-flex flex-row align-items-center pl-0 ml-0">
+                    <button class="navbar-toggler text-right align-self-sm-start ml-0 mr-md-5" type="button" data-toggle="collapse"
+                    data-target="#navbarToggler-right"
+                    aria-controls="navbarToggler-right" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler text-dark close ml-0 mr-5 font-weight-normal w-100">&times;</span>
+                    </button>
+                </div>
+                <div class="col-9 d-flex justify-content-center align-items-center">
+                    <h4 class="text-secondary ml-5 pl-md-2">Мой профиль</h4>
+                </div>
+                <div class="col-12 border-top">
+                    <a href="current-user.html" 
+                      class="d-flex justify-content-start align-items-baseline pl-4 p-2 pl-sm-4 p-sm-3 user-menu-items">
+                        <i class="fas fa-th-large text-secondary mr-1"></i>
+                        <p class="text-secondary mb-0 ml-2">Мои объявления</p>
+                    </a>
+                </div>
+                <div class="col-12">
+                    <a href="#" 
+                      class="d-flex justify-content-start align-items-baseline pl-4 p-2 pl-sm-4 p-sm-3 user-menu-items">
+                        <i class="far fa-clone text-secondary mr-1"></i>
+                        <p class="text-secondary mb-0 ml-2">Пакеты объявлений</p>
+                    </a>
+                </div>
+                <div class="col-12">
+                    <a href="#" 
+                      class="d-flex justify-content-start align-items-baseline pl-4 p-2 pl-sm-4 p-sm-3 user-menu-items">
+                        <i class="fas fa-envelope text-secondary mr-1"></i>
+                        <p class="text-secondary mb-0 ml-2">Мои сообщения</p>
+                    </a>
+                </div>
+                <div class="col-12">
+                    <a href="#" 
+                      class="d-flex justify-content-start align-items-baseline pl-4 p-2 pl-sm-4 p-sm-3 user-menu-items">
+                        <i class="fas fa-shopping-cart text-secondary mr-1"></i>
+                        <p class="text-secondary mb-0 ml-2">Мои заказы</p>
+                    </a>
+                </div>
+                <div class="col-12">
+                    <a href="#" 
+                      class="d-flex justify-content-start align-items-baseline pl-4 p-2 pl-sm-4 p-sm-3 user-menu-items">
+                        <i class="fas fa-heart text-secondary mr-1"></i>
+                        <p class="text-secondary mb-0 ml-2">Закладки</p>
+                    </a>
+                </div>
+                <div class="col-12">
+                    <a href="#" 
+                      class="d-flex justify-content-start align-items-baseline pl-4 p-2 pl-sm-4 p-sm-3 user-menu-items">
+                        <i class="fas fa-cog text-secondary mr-1"></i>
+                        <p class="text-secondary mb-0 ml-2">Настройки</p>
+                    </a>
+                </div>
+                <div class="col-12 border-bottom">
+                    <a href="#" 
+                      class="d-flex justify-content-start align-items-baseline pl-4 p-2 pl-sm-4 p-sm-3 user-menu-items">
+                        <i class="fas fa-question-circle text-secondary mr-1"></i>
+                        <p class="text-secondary mb-0 ml-2">Помощь</p>
+                    </a>
+                </div>
+                <div class="col-12">
+                    <a href="#" 
+                      class="d-flex justify-content-start align-items-baseline pl-4 p-2 pl-sm-4 p-sm-3 user-menu-items">
+                        <i class="fas fa-sign-out-alt text-secondary mr-1"></i>
+                        <p class="text-secondary mb-0 ml-2">Выход</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+<!-- user-menu-lg -->
+<div class="dropdown-menu p-0 mt-2 position-absolute user-menu-lg" 
+  id="menu-user-lg">
+    <div class="d-flex flex-column justify-content-start align-items-start user-menu-lg" id="innerMenuUserLg">
+        <a href="#" 
+          class="d-flex justify-content-start align-items-baseline p-2 w-100 user-menu-items">
+            <i class="fas fa-th-large text-secondary mr-1"></i>
+            <p class="text-secondary mb-0 ml-2">Мои объявления</p>
+        </a>
+        <a href="profile-package.html" 
+          class="d-flex justify-content-start align-items-baseline p-2 w-100 user-menu-items">
+            <i class="far fa-clone text-secondary mr-1"></i>
+            <p class="text-secondary mb-0 ml-2">Пакеты объявлений</p>
+        </a>
+        <a href="#" 
+          class="d-flex justify-content-start align-items-baseline p-2 w-100 user-menu-items">
+             <i class="fas fa-envelope text-secondary mr-1"></i>
+            <p class="text-secondary mb-0 ml-2">Мои сообщения</p>
+        </a>
+        <a href="#" 
+          class="d-flex justify-content-start align-items-baseline p-2 w-100 user-menu-items">
+            <i class="fas fa-shopping-cart text-secondary mr-1"></i>
+            <p class="text-secondary mb-0 ml-2">Мои заказы</p>
+        </a>
+        <a href="#" 
+          class="d-flex justify-content-start align-items-baseline p-2 w-100 user-menu-items">
+            <i class="fas fa-heart text-secondary mr-1"></i>
+            <p class="text-secondary mb-0 ml-2">Закладки</p>
+        </a>
+        <a href="#" 
+          class="d-flex justify-content-start align-items-baseline p-2 w-100 user-menu-items">
+            <i class="fas fa-cog text-secondary mr-1"></i>
+            <p class="text-secondary mb-0 ml-2">Настройки</p>
+        </a>
+        <a href="#" 
+          class="d-flex justify-content-start align-items-baseline p-2 w-100 user-menu-items">
+            <i class="fas fa-question-circle text-secondary mr-1"></i>
+            <p class="text-secondary mb-0 ml-2">Помощь</p>
+        </a>
+        <a href="#" 
+          class="d-flex justify-content-start align-items-baseline p-2 w-100 user-menu-items">
+            <i class="fas fa-sign-out-alt text-secondary mr-1"></i>
+            <p class="text-secondary mb-0 ml-2">Выход</p>
+       </a>
+    </div>
+</div>
+<!-- lg-menu -->
+<section id="container-rotation" 
+         class="container-fluid d-none d-lg-flex flex-column justify-content-center align-items-center bg-light px-2 pt-3 position-relative">
+    <nav class="nav-lg-visible height-100 overflow container-fluid pl-5 pr-0 bg-light d-flex flex-nowrap flex-row justify-content-center align-items-center position-relative mx-5"
+         id="rotate">
+        <ul class="rotation-items list-unstyled d-flex flex-row flex-nowrap justify-content-start align-items-center ml-0 height-100 mt-1">
+            <li class="nav-item dropdown p-0 ml-1 ml-xl-0">
+                <a class="nav-link d-flex flex-column justify-content-start px-1 align-items-center text-center inline-items px-0 py-3 text-muted"
+                   data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-cogs mb-1"></i>
+                    <small class="text-muted">
+                        Лодочные <br>моторы дизльные
+                    </small>
+                </a>
+                <div class="dropdown-menu mt-0 py-0">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown p-0 ml-1 ml-xl-0">
+                <a class="nav-link d-flex flex-column justify-content-start px-1 align-items-center text-center inline-items px-0 py-3 text-muted"
+                   data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-motorcycle mb-1"></i>
+                    <small class="text-muted">
+                        Спец- и<br>мототехника
+                    </small>
+                </a>
+                <div class="dropdown-menu mt-0 py-0">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown p-0 ml-1 ml-xl-0">
+                <a class="nav-link d-flex flex-column justify-content-start px-1 align-items-center text-center inline-items px-0 py-3 text-muted"
+                   data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-truck-loading mb-1"></i>
+                    <small class="text-muted">
+                        Лодочные <br>прицепы
+                    </small>
+                </a>
+                <div class="dropdown-menu mt-0 py-0">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown p-0 ml-1 ml-xl-0">
+                <a class="nav-link d-flex flex-column justify-content-start px-1 align-items-center text-center inline-items px-0 py-3  text-muted"
+                   data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-ship mb-1"></i>
+                    <small class="text-muted">
+                        Моторные <br>лодки легкосплавные
+                    </small>
+                </a>
+                <div class="dropdown-menu mt-0 py-0">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown p-0 ml-1 ml-xl-0">
+                <a class="nav-link d-flex flex-column justify-content-start px-1 align-items-center text-center inline-items px-0 py-3 text-muted"
+                   data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-ship mb-1"></i>
+                    <small class="text-muted">
+                        Надувные <br>лодки
+                    </small>
+                </a>
+                <div class="dropdown-menu mt-0 py-0">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown p-0 ml-1 ml-xl-0">
+                <a class="nav-link d-flex flex-column justify-content-start px-1 align-items-center text-center inline-items px-0 py-3 text-muted"
+                   data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-fish mb-1"></i>
+                    <small class="text-muted">
+                        Рыбацкие <br>вести от Деда Васи
+                    </small>
+                </a>
+                <div class="dropdown-menu mt-0 py-0">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown p-0 ml-1 ml-xl-0">
+                <a class="nav-link d-flex flex-column justify-content-start px-1 align-items-center text-center inline-items px-0 py-3 text-muted"
+                   data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-fish mb-1"></i>
+                    <small class="text-muted">
+                        Рыбацкие <br>страсти
+                    </small>
+                </a>
+                <div class="dropdown-menu mt-0 py-0">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown p-0 ml-1 ml-xl-0">
+                <a class="nav-link d-flex flex-column justify-content-start px-1 align-items-center text-center inline-items px-0 py-3 text-muted"
+                   data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-fish mb-1"></i>
+                    <small class="text-muted">
+                        Рыбацкие <br>сны о больших рыбах
+                    </small>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right mt-0 py-0">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown p-0 ml-1 ml-xl-0">
+                <a class="nav-link d-flex flex-column justify-content-start px-1 align-items-center text-center inline-items px-0 py-3 text-muted"
+                   data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-fish mb-1"></i>
+                    <small class="text-muted">
+                        Рыбацкие <br>мечты
+                    </small>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right mt-0 py-0">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown p-0 ml-1 ml-xl-0">
+                <a class="nav-link d-flex flex-column justify-content-start px-1 align-items-center text-center inline-items px-0 py-3 text-muted"
+                   data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-fish mb-1"></i>
+                    <small class="text-muted">
+                        Рыбацкие <br>тревоги о будущем
+                    </small>
+                </a>
+                <div class="dropdown-menu py-0 mt-0">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown p-0 ml-1 ml-xl-0">
+                <a class="nav-link d-flex flex-column justify-content-start px-1 align-items-center text-center inline-items px-0 py-3 text-muted"
+                   data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-fish mb-1"></i>
+                    <small class="text-muted">
+                        Рыбацкие <br>заботы
+                    </small>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right py-0 mt-0">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown p-0 ml-1 ml-xl-0">
+                <a class="nav-link d-flex flex-column justify-content-start px-1 align-items-center text-center inline-items px-0 py-3 text-muted"
+                   data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-fish mb-1"></i>
+                    <small class="text-muted">
+                        Рыбацкие <br>боты
+                    </small>
+                </a>
+                <div class="dropdown-menu py-0 mt-0">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown p-0 ml-1 ml-xl-0">
+                <a class="nav-link d-flex flex-column justify-content-start px-1 align-items-center text-center inline-items px-0 py-3 text-muted"
+                   data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-fish mb-1"></i>
+                    <small class="text-muted">
+                        Рыбацкие <br>шхуны
+                    </small>
+                </a>
+                <div class="dropdown-menu mt-0 py-0">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown p-0 ml-1 ml-xl-0">
+                <a class="nav-link d-flex flex-column justify-content-start px-1 align-items-center text-center inline-items px-0 py-3 text-muted"
+                   data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-fish mb-1"></i>
+                    <small class="text-muted">
+                        Рыбацкие <br>приколы и аннекдоты
+                    </small>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right  mt-0 py-0">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown p-0 ml-1 ml-xl-0">
+                <a class="nav-link d-flex flex-column justify-content-start px-1 align-items-center text-center inline-items px-0 py-3 text-muted"
+                   data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-fish mb-1"></i>
+                    <small class="text-muted">
+                        Рыбацкие <br>лодки
+                    </small>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right mt-0 py-0">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown p-0 ml-1 ml-xl-0">
+                <a class="nav-link d-flex flex-column justify-content-start px-1 align-items-center text-center inline-items px-0 py-3 text-muted"
+                   data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-fish mb-1"></i>
+                    <small class="text-muted">
+                        Рыбацкая <br> одежда
+                    </small>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right mt-0 py-0">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown p-0 ml-1 ml-xl-0">
+                <a class="nav-link d-flex flex-column justify-content-start px-1 align-items-center text-center inline-items px-0 py-3 text-muted"
+                   data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-fish mb-1"></i>
+                    <small class="text-muted">
+                        Рыбацкие <br>стульчики
+                    </small>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right mt-0 py-0">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown p-0 ml-1 ml-xl-0">
+                <a class="nav-link d-flex flex-column justify-content-start px-1 align-items-center text-center inline-items px-0 py-3 text-muted"
+                   data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-fish mb-1"></i>
+                    <small class="text-muted">
+                        Рыбацкие <br>палатки для зимы
+                    </small>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right mt-0 py-0">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown p-0 ml-1 ml-xl-0">
+                <a class="nav-link d-flex flex-column justify-content-start px-1 align-items-center text-center inline-items px-0 py-3 text-muted"
+                   data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-fish mb-1"></i>
+                    <small class="text-muted">
+                        Рыбацкие <br>шляпы
+                    </small>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right  mt-0 py-0">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown p-0 ml-1 ml-xl-0">
+                <a class="nav-link d-flex flex-column justify-content-start px-1 align-items-center text-center inline-items px-0 py-3 text-muted"
+                   data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-motorcycle mb-1"></i>
+                    <small class="text-muted">
+                        Спец- и<br>мототехника
+                    </small>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right  mt-0 py-0">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div class="d-flex justify-content-center aligh-items-center bg-light pl-1 py-3 pr-3 pr-xl-4 position-absolute border-radius mb-0 button-group height-100">
+        <button class="btn btn-light rotate-left text-secondary" type="button" id="leftRotate">
+            <i class="fas fa-chevron-left fa-2x py-2"></i>
+        </button>
+        <button class="btn btn-light rotate-right text-secondary" type="button" id="rightRotate">
+            <i class="fas fa-chevron-right fa-2x py-2"></i>
+        </button>
+    </div>
+</section>
+<!-- end lg menu -->
+<!-- search -->
+<section id="search" class="container-fluid d-lg-none mt-2">
+    <div class="w-100 d-flex flex-row flex-nowrap justify-content-center align-items-center">
+        <form class="form-inline my-2 ml-1 w-100">
+            <a href="#" class="text-muted"><i class="fas fa-search pl-1"></i></a>
+            <input class="form-control mr-0 bg-light w-100" type="search" placeholder="Поиск" aria-label="search">
+        </form>
+        <a href="#" class="pl-1">
+            <i class="fas fa-sliders-h fa-2x mr-1"></i>
+        </a>
+    </div>
+</section>
+<!-- main section -->
+<section id="main" class="container-fluid pt-2 mt-1 pl-3 ml-1 pr-4 mb-5 px-lg-4 mx-lg-auto container-xl">
+    <!-- section breadcrumbs -->
+    <div class="row pt-1 pt-lg-3 d-none d-lg-flex">
+        <div class="col-12 mx-0">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb p-0 mb-0 bg-white">
+                    <li class="breadcrumb-item small pl-0"><a href="index.html">Главная</a></li>
+                    <li class="breadcrumb-item small pl-1"><a href="#">Пользователи</a></li>
+                    <li class="breadcrumb-item active small" aria-current="page">Василий</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <div class="row d-lg-none">
+        <div class="col-12 d-flex justify-content-end">
+            <!-- dropleft button -->
+            <div class="btn-group dropleft">
+                <button type="button" class="btn-dots bg-transparent text-muted p-0 pr-1 mr-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-ellipsis-v"></i>
+                </button>
+                <div class="dropdown-menu p-2 mt-4">
+                    <a href="#" class="text-muted danger-link">
+                    <p class="text-nowrap">
+                        <i class="fas fa-user-alt-slash text-dark mr-1"></i> Заблокировать
+                    </p>
+                </a>
+                <a href="#" class="text-muted danger-link">
+                    <p class="text-nowrap mb-0">
+                        <i class="fas fa-exclamation-triangle text-dark mr-1"></i> Сообщить о нарушении
+                    </p>
+                </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row pt-3">
+        <div class="col-12 col-lg-3 text-center">
+            <aside id="aside" class="d-flex flex-column justify-content-center align-items-center user-info">
+                <span class="py-1 pl-1 text-success position-relative user-online-profile">
+                    <i class="fas fa-circle"></i>
+                </span>
+                <i class="fas fa-user-circle fa-5x text-muted"></i>
+                <h4 class="text-dark mt-2 user-name d-flex flex-row align-items-center justify-content-center">Василий М.</h4>
+                <div class="d-flex flex-row justify-content-center">
+                    <p class="text-muted mb-1 mx-1 since">C 10 окт.2018 | Днепр</p>
+                </div>
+                <div id="progress"
+                     class="progress position-relative w-50 d-flex flex-row flex-nowrap justify-content-center align-items-center bg-white pl-2 my-3">
+                    <div id="outer" class="position-absolute">
+                    <div id="overlay" class="overlay position-absolute bg-white"></div>
+                        <div id="inner"
+                              class="inner position-absolute d-flex flex-row flex-nowrap justify-content-end align-items-center">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-1">
+                    <p class="text-muted mb-1 mx-2">2 подписчика</p>
+                    <p class="text-muted mb-1 mx-2">1 подписка</p>
+                </div>
+                <button type="button" class="btn btn-light border-primary my-3 text-wrap text-primary px-5">
+                    Подписаться
+                </button>
+                <div class="text-center mt-1">
+                    <p class="lead text-secondary">Телефон:<br class="d-none d-lg-block"> + 38 (050) 038 17 49</p>
+                    <p class="lead text-secondary">E-mail:<br class="d-none d-lg-block">  vasya_@ukr.net</p>
+                </div>
+            </aside>
+            <hr class="d-none d-lg-block">
+            <div class="danger text-left pl-1 d-none d-lg-block">
+                <a href="#" class="text-muted danger-link">
+                    <p class="pl-2">
+                        <i class="fas fa-user-alt-slash text-dark pr-1"></i> Заблокировать
+                    </p>
+                </a>
+                <a href="#" class="text-muted danger-link">
+                    <p class="pl-2 text-nowrap">
+                        <i class="fas fa-exclamation-triangle text-dark pr-1"></i> Сообщить о нарушении
+                    </p>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-9 d-none d-lg-block mt-4 pt-1">
+            <div class="row border-bottom mr-0 mb-3">
+                <div class="col-2 px-0 mx-0 mb-0 border-bottom border-primary">
+                    <p class="text-muted border-bottom border-primary pb-3 mb-0 pr-0">3 в продаже</p>
+                </div>
+                <div class="col-2 px-0 mx-0">
+                    <a href="profile-sold.html" class="text-secondary"><p class="text-muted pb-3 mb-0">Продано</p></a>
+                </div>
+            </div>
+            <!-- available -->
+            <div class="row pr-2 mb-2" id="available">
+                <!-- one -->
+                <div class="col-6 col-lg-4 col-xl-3 pr-2 py-1 pl-0">
+                    <div class="card">
+                        <a href="#" class="img-link overflow">
+                            <img src="img/luxury-yacht-boat-speed-water-163236.jpeg" alt="фото" class="card-img-top">
+                        </a>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end pr-2 pb-5 mb-1">
+                            <a href="#" class="text-white align-self-end mb-1 img-link-overlay" data-toggle="tooltip" data-placement="top" title="Добавить в избранное">      
+                                <i class="far fa-heart fa-2x"></i>
+                            </a>
+                        </div>
+                        <div class="d-flex flex-row justify-content-start mb-0">
+                            <h5 class="text-dark price mb-0 pb-0 ml-2">
+                                500000
+                            </h5>
+                            <img class="align-self-center ml-2 img-sign" src="img/Hryvnia_symbol.png" alt="грн">
+                        </div>
+                        <a href="#" class="text-muted card-name overflow">
+                            <p class="ml-2 mb-0 text-nowrap text-overflow overflow">Моторная яхта крутая</p>
+                        </a>
+                    </div>
+                </div>
+                <!-- two -->
+                <div class="col-6 col-lg-4 col-xl-3 pr-2 py-1 pl-0">
+                    <div class="card">
+                        <a href="#" class="img-link overflow">
+                            <img src="img/pexels-photo-439224.png" alt="фото" class="card-img-top">
+                        </a>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end pr-2 pb-5 mb-1">
+                            <a href="#" class="text-white align-self-end mb-1 img-link-overlay" data-toggle="tooltip" data-placement="top" title="Добавить в избранное">      
+                                <i class="far fa-heart fa-2x"></i>
+                            </a>
+                        </div>
+                        <div class="d-flex flex-row justify-content-start mb-0">
+                            <h5 class="text-dark price mb-0 pb-0 ml-2">
+                                50000
+                            </h5>
+                            <img class="align-self-center ml-2 img-sign" src="img/Hryvnia_symbol.png" alt="грн">
+                        </div>
+                        <a href="#" class="text-muted card-name overflow">
+                            <p class="ml-2 mb-0 text-nowrap text-overflow overflow">Моторная лодка новая</p>
+                        </a>
+                    </div>
+                </div>
+                <!-- three -->
+                <div class="col-6 col-lg-4 col-xl-3 pr-2 py-1 pl-0">
+                    <div class="card">
+                        <a href="#" class="img-link overflow">
+                            <img src="img/pexels-photo-635534.png" alt="фото" class="card-img-top">
+                        </a>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end pr-2 pb-5 mb-1">
+                            <a href="#" class="text-white align-self-end mb-1 img-link-overlay" data-toggle="tooltip" data-placement="top" title="Добавить в избранное">      
+                                <i class="far fa-heart fa-2x"></i>
+                            </a>
+                        </div>
+                        <div class="d-flex flex-row justify-content-start mb-0">
+                            <h5 class="text-dark price mb-0 pb-0 ml-2">
+                                30000
+                            </h5>
+                            <img class="align-self-center ml-2 img-sign" src="img/Hryvnia_symbol.png" alt="грн">
+                        </div>
+                        <a href="#" class="text-muted card-name overflow">
+                            <p class="ml-2 mb-0 text-nowrap text-overflow overflow">Моторная яхта</p>
+                        </a>
+                    </div>
+                </div>
+                <!-- one -->
+                <div class="col-6 col-lg-4 col-xl-3 pr-2 py-1 pl-0">
+                    <div class="card">
+                        <a href="#" class="img-link overflow">
+                            <img src="img/luxury-yacht-boat-speed-water-163236.jpeg" alt="фото" class="card-img-top">
+                        </a>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end pr-2 pb-5 mb-1">
+                            <a href="#" class="text-white align-self-end mb-1 img-link-overlay" data-toggle="tooltip" data-placement="top" title="Добавить в избранное">      
+                                <i class="far fa-heart fa-2x"></i>
+                            </a>
+                        </div>
+                        <div class="d-flex flex-row justify-content-start mb-0">
+                            <h5 class="text-dark price mb-0 pb-0 ml-2">
+                                500000
+                            </h5>
+                            <img class="align-self-center ml-2 img-sign" src="img/Hryvnia_symbol.png" alt="грн">
+                        </div>
+                        <a href="#" class="text-muted card-name overflow">
+                            <p class="ml-2 mb-0 text-nowrap text-overflow overflow">Моторная яхта крутая</p>
+                        </a>
+                   </div>
+                </div>
+                <!-- one -->
+                <div class="col-6 col-lg-4 col-xl-3 pr-2 py-1 pl-0">
+                    <div class="card">
+                        <a href="#" class="img-link overflow">
+                            <img src="img/luxury-yacht-boat-speed-water-163236.jpeg" alt="фото" class="card-img-top">
+                        </a>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end pr-2 pb-5 mb-1">
+                            <a href="#" class="text-white align-self-end mb-1 img-link-overlay" data-toggle="tooltip" data-placement="top" title="Добавить в избранное">      
+                                <i class="far fa-heart fa-2x"></i>
+                            </a>
+                        </div>
+                        <div class="d-flex flex-row justify-content-start mb-0">
+                            <h5 class="text-dark price mb-0 pb-0 ml-2">
+                                500000
+                            </h5>
+                            <img class="align-self-center ml-2 img-sign" src="img/Hryvnia_symbol.png" alt="грн">
+                        </div>
+                        <a href="#" class="text-muted card-name overflow">
+                            <p class="ml-2 mb-0 text-nowrap text-overflow overflow">Моторная яхта крутая</p>
+                        </a>
+                   </div>
+                </div>
+                <!-- two -->
+                <div class="col-6 col-lg-4 col-xl-3 pr-2 py-1 pl-0">
+                    <div class="card">
+                        <a href="#" class="img-link overflow">
+                            <img src="img/pexels-photo-439224.png" alt="фото" class="card-img-top">
+                        </a>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end pr-2 pb-5 mb-1">
+                            <a href="#" class="text-white align-self-end mb-1 img-link-overlay" data-toggle="tooltip" data-placement="top" title="Добавить в избранное">      
+                                <i class="far fa-heart fa-2x"></i>
+                            </a>
+                        </div>
+                        <div class="d-flex flex-row justify-content-start mb-0">
+                            <h5 class="text-dark price mb-0 pb-0 ml-2">
+                                50000
+                            </h5>
+                            <img class="align-self-center ml-2 img-sign" src="img/Hryvnia_symbol.png" alt="грн">
+                        </div>
+                        <a href="#" class="text-muted card-name overflow">
+                            <p class="ml-2 mb-0 text-nowrap text-overflow overflow">Моторная лодка новая</p>
+                        </a>
+                    </div>
+                </div>
+                <!-- three -->
+                <div class="col-6 col-lg-4 col-xl-3 pr-2 py-1 pl-0">
+                    <div class="card">
+                        <a href="#" class="img-link overflow">
+                            <img src="img/pexels-photo-635534.png" alt="фото" class="card-img-top">
+                        </a>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end pr-2 pb-5 mb-1">
+                            <a href="#" class="text-white align-self-end mb-1 img-link-overlay" data-toggle="tooltip" data-placement="top" title="Добавить в избранное">      
+                                <i class="far fa-heart fa-2x"></i>
+                            </a>
+                        </div>
+                        <div class="d-flex flex-row justify-content-start mb-0">
+                            <h5 class="text-dark price mb-0 pb-0 ml-2">
+                                30000
+                            </h5>
+                            <img class="align-self-center ml-2 img-sign" src="img/Hryvnia_symbol.png" alt="грн">
+                        </div>
+                        <a href="#" class="text-muted card-name overflow">
+                            <p class="ml-2 mb-0 text-nowrap text-overflow overflow">Моторная яхта</p>
+                        </a>
+                    </div>
+                </div>
+                <!-- one -->
+                <div class="col-6 col-lg-4 col-xl-3 pr-2 py-1 pl-0">
+                    <div class="card">
+                        <a href="#" class="img-link overflow">
+                            <img src="img/luxury-yacht-boat-speed-water-163236.jpeg" alt="фото" class="card-img-top">
+                        </a>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end pr-2 pb-5 mb-1">
+                            <a href="#" class="text-white align-self-end mb-1 img-link-overlay" data-toggle="tooltip" data-placement="top" title="Добавить в избранное">      
+                                <i class="far fa-heart fa-2x"></i>
+                            </a>
+                        </div>
+                        <div class="d-flex flex-row justify-content-start mb-0">
+                            <h5 class="text-dark price mb-0 pb-0 ml-2">
+                                500000
+                            </h5>
+                            <img class="align-self-center ml-2 img-sign" src="img/Hryvnia_symbol.png" alt="грн">
+                        </div>
+                        <a href="#" class="text-muted card-name overflow">
+                            <p class="ml-2 mb-0 text-nowrap text-overflow overflow">Моторная яхта крутая</p>
+                        </a>
+                   </div>
+                </div>
+                <!-- button show more -->
+                <div class="col-12 text-center pt-5 pt-md-5 mb-5">
+                    <a href="#" class="btn btn-light px-5 border-primary text-primary">Показать еще</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end main -->
+<section id="unvisible-lg" class="container-fluid px-0 mx-0 d-lg-none">
+    <div class="row px-0 mx-0 mb-2">
+        <div class="col-6 text-center px-0 mx-0 mb-0 border-bottom border-primary">
+            <p class="text-muted mb-0">3</p>
+            <p class="text-muted border-bottom border-primary pb-3 mb-0">В продаже</p>
+        </div>
+        <div class="col-6 text-center px-0 mx-0 border-bottom">
+            <p class="text-muted mb-0">1</p>
+            <a href="profile-sold.html" class="text-secondary"><p class="text-muted pb-3 mb-0">Продано</p></a>
+        </div>
+    </div>
+    <!-- unvisible-lg -->
+    <div class="row px-3">
+        <!-- one -->
+        <div class="col-6 col-sm-4 col-md-3 p-1">
+            <div class="card">
+                <a href="#" class="img-link overflow">
+                    <img src="img/luxury-yacht-boat-speed-water-163236.jpeg" alt="фото" class="card-img-top">
+                </a>
+                <div class="card-img-overlay d-flex flex-column justify-content-end pr-2 pb-5 mb-1">
+                    <a href="#" class="text-white align-self-end mb-1 img-link-overlay" data-toggle="tooltip" data-placement="top" title="Добавить в избранное">      
+                        <i class="far fa-heart fa-2x"></i>
+                    </a>
+                </div>
+                <div class="d-flex flex-row justify-content-start mb-0">
+                    <h5 class="text-dark price mb-0 pb-0 ml-2">
+                        500000
+                    </h5>
+                    <img class="align-self-center ml-2 img-sign" src="img/Hryvnia_symbol.png" alt="грн">
+                </div>
+                <a href="#" class="text-muted overflow card-name">
+                    <p class="ml-2 mb-0 text-nowrap text-overflow overflow overflow">Моторная яхта крутая</p>
+                </a>
+            </div>
+        </div>
+        <!-- two -->
+        <div class="col-6 col-sm-4 col-md-3 p-1">
+            <div class="card">
+                <a href="#" class="img-link overflow">
+                    <img src="img/pexels-photo-439224.png" alt="фото" class="card-img-top">
+                </a>
+                <div class="card-img-overlay d-flex flex-column justify-content-end pr-2 pb-5 mb-1">
+                    <a href="#" class="text-white align-self-end mb-1 img-link-overlay" data-toggle="tooltip" data-placement="top" title="Добавить в избранное">      
+                        <i class="far fa-heart fa-2x"></i>
+                    </a>
+                </div>
+                <div class="d-flex flex-row justify-content-start mb-0">
+                    <h5 class="text-dark price mb-0 pb-0 ml-2">
+                        50000
+                    </h5>
+                    <img class="align-self-center ml-2 img-sign" src="img/Hryvnia_symbol.png" alt="грн">
+                </div>
+                <a href="#" class="text-muted overflow card-name">
+                    <p class="ml-2 mb-0 text-nowrap text-overflow overflow">Моторная лодка новая</p>
+                </a>
+            </div>
+        </div>
+        <!-- three -->
+        <div class="col-6 col-sm-4 col-md-3 p-1">
+            <div class="card">
+                <a href="#" class="img-link overflow">
+                    <img src="img/pexels-photo-635534.png" alt="фото" class="card-img-top">
+                </a>
+                <div class="card-img-overlay d-flex flex-column justify-content-end pr-2 pb-5 mb-1">
+                    <a href="#" class="text-white align-self-end mb-1 img-link-overlay" data-toggle="tooltip" data-placement="top" title="Добавить в избранное">      
+                        <i class="far fa-heart fa-2x"></i>
+                    </a>
+                </div>
+                <div class="d-flex flex-row justify-content-start mb-0">
+                    <h5 class="text-dark price mb-0 pb-0 ml-2">
+                        300000
+                    </h5>
+                    <img class="align-self-center ml-2 img-sign" src="img/Hryvnia_symbol.png" alt="грн">
+                </div>
+                <a href="#" class="text-muted overflow card-name">
+                    <p class="ml-2 mb-0 text-nowrap text-overflow overflow">Моторная яхта</p>
+                </a>
+            </div>
+        </div>
+        <!-- button show more -->
+        <div class="col-12 text-center pt-5 pt-md-5 mb-5">
+            <a href="#" class="btn btn-light px-5 border-primary text-primary">Показать еще</a>
+        </div>
+    </div>
+</section>
+<!-- footer -->
+<footer id="footer" class="container-fluid p-4 pt-5 container-xl">
+    <div class="footer-top d-none d-lg-block">
+        <div class="row">
+            <!-- cities' list -->
+            <!-- Винница-Ужгород -->
+            <div class="col-lg-3 d-flex flex-column justify-content-start">
+                <a href="#" class="text-muted py-2">
+                    Винница
+                </a>
+                <a href="#" class="text-muted py-2">
+                    Луцк
+                </a>
+                <a href="#" class="text-muted py-2">
+                    Днепр
+                </a>
+                <a href="#" class="text-muted py-2">
+                    Донецк
+                </a>
+                <a href="#" class="text-muted py-2">
+                    Житомер
+                </a>
+                <a href="#" class="text-muted py-2">
+                    Ужгород
+                </a>
+                <a href="#" class="py-5">
+                    Перейти ко всем городам
+                </a>
+            </div>
+            <!-- Запорожье-Львов -->
+            <div class="col-lg-3 d-flex flex-column justify-content-start">
+                <a href="#" class="text-muted py-2">
+                    Запорожье
+                </a>
+                <a href="#" class="text-muted py-2">
+                    Ивано-Франковск
+                </a>
+                <a href="#" class="text-muted py-2">
+                    Киев
+                </a>
+                <a href="#" class="text-muted py-2">
+                    Кропивницкий(Кировоград)
+                </a>
+                <a href="#" class="text-muted py-2">
+                    Луганск
+                </a>
+                <a href="#" class="text-muted py-2">
+                    Львов
+                </a>
+            </div>
+            <!-- Николаев-Тернополь -->
+            <div class="col-lg-3 d-flex flex-column justify-content-start">
+                <a href="#" class="text-muted py-2">
+                    Николаев
+                </a>
+                <a href="#" class="text-muted py-2">
+                    Одесса
+                </a>
+                <a href="#" class="text-muted py-2">
+                    Полтава
+                </a>
+                <a href="#" class="text-muted py-2">
+                    Ровно
+                </a>
+                <a href="#" class="text-muted py-2">
+                    Сумы
+                </a>
+                <a href="#" class="text-muted py-2">
+                    Тернополь
+                </a>
+            </div>
+            <!-- Харьков-Черновцы -->
+            <div class="col-lg-3 d-flex flex-column justify-content-start">
+                <a href="#" class="text-muted py-2">
+                    Харьков
+                </a>
+                <a href="#" class="text-muted py-2">
+                    Херсон
+                </a>
+                <a href="#" class="text-muted py-2">
+                    Хмельницкий
+                </a>
+                <a href="#" class="text-muted py-2">
+                    Черкассы
+                </a>
+                <a href="#" class="text-muted py-2">
+                    Чернигов
+                </a>
+                <a href="#" class="text-muted py-2">
+                    Черновцы
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="row d-lg-none py-5">
+        <div class="col-12 text-center">
+            <a href="#" class="text-wrap">
+                Перейти ко всем городам
+            </a>
+        </div>
+    </div>
+    <div class="footer-bottom border-top d-flex flex-column flex-lg-row flex-wrap justify-content-center justify-content-lg-between align-items-center py-3">
+        <div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
+            <a href="#" class="text-muted pr-2">
+                Подписаться на уведомления
+            </a>
+            <a href="#" class="text-muted pr-2">
+                Лицензионные соглашения
+            </a>
+            <a href="#" class="text-muted pr-2">
+                Обратная связь
+            </a>
+            <a href="#" class="text-muted pr-2">
+                Помощь
+            </a>
+        </div>
+        <small class="text-muted">
+            2018 &copy; || Все права защищены
+        </small>
+    </div>
+</footer>
+<a href="#" class="scrollup">
+    <i class="fas fa-long-arrow-alt-up"></i> Наверх
+</a>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script src="js/scripts-description.js"></script>
+</body>
+</html>

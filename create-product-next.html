@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Джигга!</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+          integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+          crossorigin="anonymous">
+    <!-- main CSS -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="header border-bottom">
+    <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-white position-relative container-xl">
+        <!-- left button -->
+        <a href="create-product.html" class="navbar-toggler pl-3 d-lg-none" id="leftToggling">
+            <span class="text-dark"><i class="fas fa-arrow-left"></i></span>
+        </a>
+        <a class="navbar-brand font-weight-bold logo pt-lg-2 d-none d-md-block mb-1 ml-lg-2 text-uppercase" href="index.html">
+            Jigga!
+        </a>
+        <h5 class="d-sm-none mb-0">Новое объявление</h5>
+        <h4 class="d-none d-sm-block d-md-none mb-0">Новое объявление</h4>
+        <!-- right button -->
+        <button class="navbar-toggler p-0 invisible" type="button">
+            <i class="fas fa-user-circle mr-1 user-photo"></i>
+        </button>
+        <!-- left -->
+        <div class="collapse navbar-collapse d-lg-flex justify-content-end position-absolute py-0 px-0 bg-white collapse-left container-xl"
+             id="navbarTogglerDemo01">
+            <a href="#" 
+              class="dropleft text-muted ml-4 mr-lg-3 my-lg-0 pb-0 pt-1 align-self-center d-none d-lg-block border-transparent"
+              id="blockMenu">
+                <i class="fas fa-user-circle mr-4 mt-2 user-photo"></i>
+            </a>
+        </div>
+    </nav>
+</div>
+<!-- user-menu-lg -->
+<div class="dropdown-menu p-0 mt-2 position-absolute user-menu-lg" id="menu-user-lg">
+    <div class="d-flex flex-column justify-content-start align-items-start user-menu-lg" id="innerMenuUserLg">
+        <a href="#" 
+          class="d-flex justify-content-start align-items-baseline p-2 w-100 user-menu-items">
+            <i class="fas fa-th-large text-secondary mr-1"></i>
+            <p class="text-secondary mb-0 ml-2">Мои объявления</p>
+        </a>
+        <a href="#" 
+          class="d-flex justify-content-start align-items-baseline p-2 w-100 user-menu-items">
+            <i class="far fa-clone text-secondary mr-1"></i>
+            <p class="text-secondary mb-0 ml-2">Пакеты объявлений</p>
+        </a>
+        <a href="#" 
+          class="d-flex justify-content-start align-items-baseline p-2 w-100 user-menu-items">
+             <i class="fas fa-envelope text-secondary mr-1"></i>
+            <p class="text-secondary mb-0 ml-2">Мои сообщения</p>
+        </a>
+        <a href="#" 
+          class="d-flex justify-content-start align-items-baseline p-2 w-100 user-menu-items">
+            <i class="fas fa-shopping-cart text-secondary mr-1"></i>
+            <p class="text-secondary mb-0 ml-2">Мои заказы</p>
+        </a>
+        <a href="#" 
+          class="d-flex justify-content-start align-items-baseline p-2 w-100 user-menu-items">
+            <i class="fas fa-heart text-secondary mr-1"></i>
+            <p class="text-secondary mb-0 ml-2">Закладки</p>
+        </a>
+        <a href="#" 
+          class="d-flex justify-content-start align-items-baseline p-2 w-100 user-menu-items">
+            <i class="fas fa-cog text-secondary mr-1"></i>
+            <p class="text-secondary mb-0 ml-2">Настройки</p>
+        </a>
+        <a href="#" 
+          class="d-flex justify-content-start align-items-baseline p-2 w-100 user-menu-items">
+            <i class="fas fa-question-circle text-secondary mr-1"></i>
+            <p class="text-secondary mb-0 ml-2">Помощь</p>
+        </a>
+        <a href="#" 
+          class="d-flex justify-content-start align-items-baseline p-2 w-100 user-menu-items">
+            <i class="fas fa-sign-out-alt text-secondary mr-1"></i>
+            <p class="text-secondary mb-0 ml-2">Выход</p>
+       </a>
+    </div>
+</div>
+<!-- main section -->
+<section id="main" class="container-fluid pt-0 mt-0 pl-3 ml-1 pr-4 mb-0 mb-md-5 px-lg-4 mx-lg-auto container-xl">
+    <div class="d-none d-lg-flex flex-row justify-content-start align-items-center mt-lg-2">
+        <a href="create-product.html" class="text-muted mr-2">
+            <i class="fas fa-arrow-left fa-2x"></i>
+        </a>
+        <h3 class="text-dark py-4 mb-1 ml-2">Спецтехника и мотоциклы</h3>
+    </div>
+    <div class="row mt-2 mt-md-4 mt-lg-0">
+        <form class="col-md-12 col-lg-9">
+            <div class="row d-none d-md-flex">
+                <div class="col-3 pt-2">
+                    <p class="text-muted mb-0">Категория<span class="text-danger">*</span></p>
+                </div>
+                <div class="col-5 form-group">
+                    <select disabled="disabled" class="custom-select p-2 w-100 bg-light border border-muted">
+                        <option value="specialTechnic" class="text-muted">Спецтехника и мотоциклы</option>
+                    </select>
+                </div>
+                <div class="col-4 pl-0 form-group">
+                    <select class="custom-select p-2 w-100 border border-muted text-muted" id="choseCategory" required>
+                        <option value="" class="p-1 bg-light text-muted">Сделайте выбор</option>
+                        <option value="1" class="p-1 bg-light text-dark">Мототехника</option>
+                        <option value="2" class="p-1 bg-light text-dark">Спецтехника</option>
+                        <option value="3" class="p-1 bg-light text-dark">Автобусы и грузовые авто</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mt-4 d-none d-md-flex">
+                <div class="col-3 pt-2">
+                    <p class="text-muted mb-0">Тип</p>
+                </div>
+                <div class="col-5">
+                    <select class="custom-select p-2 w-100 border border-muted text-muted" id="selectType" required>
+                        <option value="" class="p-1 bg-light text-muted">Сделайте выбор</option>
+                        <option value="1" class="p-1 bg-light text-dark">Квадрациклы</option>
+                        <option value="2" class="p-1 bg-light text-dark">Трициклы</option>
+                        <option value="3" class="p-1 bg-light text-dark">Моноциклы</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mt-5 d-none d-md-flex">
+                <div class="col-3 pt-2">
+                    <p class="text-muted mb-0">Название товара<span class="text-danger">*</span></p>
+                </div>
+                <div class="col-9">
+                    <input type="text" class="form-control" maxlength="50" id=goodsNameInput>
+                    <small class="form-text text-muted">Название не должно превышать 50 символов</small>
+                </div>
+            </div>
+            <div class="row mt-4 d-none d-md-flex">
+                <div class="col-3 pt-2">
+                    <p class="text-muted mb-0">Цена<span class="text-danger">*</span></p>
+                </div>
+                <div class="col-3">
+                    <div class="d-flex">
+                        <input type="text" class="form-control" id="priceCheck">
+                        <span class="text-dark align-self-center ml-1">грн</span> 
+                    </div>
+                    <div class="form-check mt-1">
+                        <input class="form-check-input" type="checkbox" id="benefitial">
+                        <label class="form-check-label" for="benefitial">
+                            Договорная
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4 d-none d-md-flex">
+                <div class="col-3 pt-2">
+                    <p class="text-muted mb-0">Описание</p>
+                </div>
+                <div class="col-9 d-flex">
+                    <div class="form-group w-100">
+                        <textarea maxlength="3000" class="form-control" rows="7" id="goodsDescription"></textarea>
+                        <small class="form-text text-muted">До 3000 символов</small>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-0 mt-md-4" id="forms-sm">
+                <div class="col-3 pt-2 d-none d-md-block">
+                    <p class="text-muted mb-0">Фотографии<span class="text-danger">*</span></p>
+                </div>
+                <div class="col-12 col-lg-9 pt-2">
+                    <p class="text-muted mb-0 d-none d-md-block">Перетащите фото сюда или 
+                        <a href="#" class="text-decoration-none">выберите их на своем компьютере...</a>
+                    </p>
+                    <div class="d-flex flex-row justify-content-center justify-content-md-start align-items-center my-2 ml-2 ml-md-0">
+                        <div class="mr-2 custom-file bg-light w-25 height">
+                            <label class="height d-flex flex-column justify-content-center align-items-center pb-4" for="fileOne">
+                                <input type="file" class="custom-file-input" id="fileOne" required>
+                                <i class="fas fa-camera fa-2x text-muted mb-3 mb-md-0"></i>
+                                <small class="text-muted d-none d-md-block">Добавить</small>
+                            </label>
+                        </div>
+                        <div class="mr-2 custom-file bg-light w-25 height">
+                            <label class="height d-flex flex-column justify-content-center align-items-center pb-4" for="fileTwo">
+                                <input type="file" class="custom-file-input" id="fileTwo" required>
+                                <i class="fas fa-camera fa-2x text-muted mb-3 mb-md-0"></i>
+                                <small class="text-muted d-none d-md-block">Добавить</small>
+                            </label>
+                        </div>
+                        <div class="mr-2 custom-file bg-light w-25 height">
+                            <label class="height d-flex flex-column justify-content-center align-items-center pb-4" for="fileThree">
+                                <input type="file" class="custom-file-input" id="fileThree" required>
+                                <i class="fas fa-camera fa-2x text-muted mb-3 mb-md-0"></i>
+                                <small class="text-muted d-none d-md-block">Добавить</small>
+                            </label>
+                        </div>
+                        <div class="mr-2 custom-file bg-light w-25 height">
+                            <label class="height d-flex flex-column justify-content-center align-items-center pb-4" for="fileFour">
+                                <input type="file" class="custom-file-input" id="fileFour" required>
+                                <i class="fas fa-camera fa-2x text-muted mb-3 mb-md-0"></i>
+                                <small class="text-muted d-none d-md-block">Добавить</small>
+                            </label>
+                        </div>
+                    </div>
+                    <p class="text-muted small mb-0 d-none d-md-block">Первое фото будет отображаться в результатах поиска, выберите наиболее удачное.</p>
+                    <p class="text-muted small mb-0 d-none d-md-block">Вы можете загрузить до 4 фотографий в формате JPG или PNG.</p>
+                    <p class="text-muted small mb-0 d-none d-md-block">Максимальный размер фото — 25MB.</p>
+                </div>
+                <!-- sm-device inputs -->
+                <div class="col-12 d-md-none mt-3 py-1 border-top">
+                    <div class="input-group my-1">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text bg-white font-weight-bold" id="goodsName">T</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Название товара" aria-label="Название товара" aria-describedby="goodsName">
+                    </div>
+                </div>
+                <div class="col-12 d-md-none py-1 border-top">
+                    <div class="input-group my-1">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text bg-white" id="Price"><i class="fas fa-dollar-sign"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Цена" aria-label="Цена" aria-describedby="Price">
+                    </div>
+                </div>
+                <div class="col-12 d-md-none py-1 border-top">
+                    <div class="input-group my-1">
+                        <div class="input-group-prepend ml-0">
+                            <span class="input-group-text bg-white px-2" id="describe"><i class="fas fa-align-left pl-1"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Описание (до 3000 символов)" aria-label="Описание" aria-describedby="describe">
+                    </div>
+                </div>
+            </div>
+            <!-- end small device -->
+            <div class="row mt-4 d-none d-md-flex">
+                <div class="col-3 pt-2">
+                    <p class="text-muted mb-0">Местоположение<span class="text-danger">*</span></p>
+                </div>
+                <div class="col-9">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text bg-white" id="search-icon"><i class="fas fa-search text-muted"></i></span>
+                        </div>
+                        <input type="text" class="form-control" required
+                          placeholder="Введите адрес" aria-label="Введите адрес" aria-describedby="search-icon" id="inputLocation">
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4 d-none d-md-flex">
+                <div class="col-3 pt-2">
+                    <p class="text-muted mb-0">Телефон<span class="text-danger">*</span></p>
+                </div>
+                <div class="col-4">
+                    <input type="tel" class="form-control" placeholder="+ 38 (___) ___-__-__" id="inputPhone" required>
+                    <p class="text-muted small mb-0 mt-1">Укажите ваш номер телефона</p>
+                </div>
+            </div>
+            <div class="row mt-4 d-none d-md-flex">
+                <div class="col-3 pt-2"></div>
+                <div class="col-4">
+                    <button type="submit" class="btn btn-primary btn-block d-flex flex-row justify-content-end">
+                        <span class="mx-auto">Далее</span>
+                        <i class="fas fa-arrow-right align-self-center"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+        <div class="d-none d-lg-block col-lg-3">
+            <aside>
+                <div class="d-flex flex-row justify-content-start align-items-center">
+                    <span class="text-light mr-3">
+                        <i class="fas fa-check-circle" id="categoryIcon"></i>
+                    </span>
+                    <p class="text-muted mb-0">Категория</p>
+                </div>
+                <p class="text-light mb-0 ml-1">|</p>
+                <div class="d-flex flex-row justify-content-start align-items-center">
+                    <span class="text-light mr-3">
+                        <i class="fas fa-check-circle" id="type"></i>
+                    </span>
+                    <p class="text-muted mb-0">Параметры</p>
+                </div>
+                <p class="text-light mb-0 ml-1">|</p>
+                <div class="d-flex flex-row justify-content-start align-items-center">
+                    <span class="text-light mr-3">
+                        <i class="fas fa-check-circle" id=goodsNameIcon></i>
+                    </span>
+                    <p class="text-muted mb-0">Название товара</p>
+                </div>
+                <p class="text-light mb-0 ml-1">|</p>
+                <div class="d-flex flex-row justify-content-start align-items-center">
+                    <span class="text-light mr-3">
+                        <i class="fas fa-check-circle" id="priceIcon"></i>
+                    </span>
+                    <p class="text-muted mb-0">Цена</p>
+                </div>
+                <p class="text-light mb-0 ml-1">|</p>
+                <div class="d-flex flex-row justify-content-start align-items-center">
+                    <span class="text-light mr-3">
+                        <i class="fas fa-check-circle" id="goodsDescriptionIcon"></i>
+                    </span>
+                    <p class="text-muted mb-0">Описание</p>
+                </div>
+                <p class="text-light mb-0 ml-1">|</p>
+                <div class="d-flex flex-row justify-content-start align-items-center">
+                    <span class="text-light mr-3">
+                        <i class="fas fa-check-circle" id="inputPhoto"></i>
+                    </span>
+                    <p class="text-muted mb-0">Фотографии</p>
+                </div>
+                <p class="text-light mb-0 ml-1">|</p>
+                <div class="d-flex flex-row justify-content-start align-items-center">
+                    <span class="text-light mr-3">
+                        <i class="fas fa-check-circle" id="inputLocationIcon"></i>
+                    </span>
+                    <p class="text-muted mb-0">Местоположение</p>
+                </div>
+                <p class="text-light mb-0 ml-1">|</p>
+                <div class="d-flex flex-row justify-content-start align-items-center">
+                    <span class="text-light mr-3">
+                        <i class="fas fa-check-circle" id="inputPhoneIcon"></i>
+                    </span>
+                    <p class="text-muted mb-0">Телефон</p>
+                </div>
+            </aside> 
+        </div>
+    </div>
+</section>
+<!-- end main -->
+<!-- sm visible sections -->
+<div class="container-fluid d-md-none bg-light border-top border-bottom sm-divider"><span class="invisible">p</span></div>
+<div class="container-fluid d-md-none">
+    <div class="row px-1">
+        <div class="col-12 py-2 pl-4 d-flex flex-row justify-content-between align-items-center border-bottom">
+            <a href="#" class="d-flex flex-row justify-content-start align-items-center text-decoration-none">
+                <i class="fas fa-motorcycle text-dark"></i>
+                <p class="text-muted py-2 mb-0 ml-3">Водный транспорт</p>
+            </a>
+            <a href="#" class="text-muted">
+                <i class="fas fa-chevron-right mr-1"></i>
+            </a>
+        </div>
+        <div class="col-12 py-2 pl-4 d-flex flex-row justify-content-between align-items-center">
+            <a href="#" class="d-flex flex-row justify-content-start align-items-center text-decoration-none ml-1">
+                <p class="text-muted py-2 mb-0 ml-3 pl-3">Тип</p>
+            </a>
+            <a href="#" class="text-muted">
+                <i class="fas fa-chevron-right mr-1"></i>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="container-fluid d-md-none bg-light border-top border-bottom sm-divider"><span class="invisible">p</span></div>
+<div class="container-fluid d-md-none">
+    <div class="row px-1">
+        <div class="col-12 py-2 pl-4 d-flex flex-row justify-content-between align-items-center border-bottom">
+            <a href="#" class="d-flex flex-row justify-content-start align-items-center text-decoration-none">
+                <i class="fas fa-map-marker-alt text-muted"></i>
+                <p class="text-muted py-2 mb-0 ml-4">Местоположение</p>
+            </a>
+            <a href="#" class="text-muted">
+                <i class="fas fa-chevron-right mr-1"></i>
+            </a>
+        </div>
+        <div class="col-12 py-2 pl-3 d-flex flex-row justify-content-between align-items-center">
+            <a href="#" class="d-flex flex-row justify-content-start align-items-center text-decoration-none ml-1">
+                <i class="fas fa-phone text-muted"></i>
+                <p class="text-muted py-2 mb-0 ml-4">Номер телефона</p>
+            </a>
+            <a href="#" class="text-muted">
+                <i class="fas fa-chevron-right mr-1"></i>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="container-fluid d-md-none bg-light border-top py-2">
+    <div class="row my-2">
+        <div class="col-12 px-4">
+            <button type="submit" class="btn btn-primary btn-block w-100 d-flex justify-content-center">
+                Далее <i class="fas fa-arrow-right align-self-center ml-2"></i>
+            </button>
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script src="js/scripts-description.js"></script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Джигга!</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+    <!-- slick carousel -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+          integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+          crossorigin="anonymous">
+    <!-- main CSS -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="header">
+    <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-white position-relative container-xl">
+        <!-- left button -->
+        <a class="navbar-toggler pl-1" href="index.html">
+            <span class="text-dark"><i class="fas fa-arrow-left"></i></span>
+        </a>
+        <a class="navbar-brand font-weight-bold logo pt-lg-2 text-uppercase ml-3 ml-lg-1 pl-xl-1" href="index.html">
+            Jigga!
+        </a>
+        <!-- right button -->
+        <button class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarToggler-right"
+                aria-controls="navbarToggler-right" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-user-circle pr-1"></i>
+        </button>
+        <!-- left -->
+        <div class="collapse navbar-collapse d-lg-flex justify-content-end position-absolute pl-3 py-0 px-2 bg-white collapse-left container-xl"
+             id="navbarTogglerDemo01">
+           <div class="row mt-3 d-none d-lg-flex width-input">
+                <div class="col-12 pl-0">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text bg-white py-1"><i class="fas fa-search pl-1 text-muted"></i></span>
+                        </div>
+                        <input type="text" class="form-control py-1" placeholder="Поиск объявлений" aria-label="Поиск обьявлений" aria-describedby="button-addon">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-muted py-1 text-muted" type="button" id="button-addon">Найти</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-buttons d-flex flex-column flex-lg-row py-0 my-0 mr-3">
+                <a href="#" class="ml-3 mx-lg-5 d-flex justify-content-center align-items-center text-muted">
+                    <i class="fas fa-location-arrow align-self-center pr-1"></i> Местоположение
+                </a>
+                <a href="#" class="btn btn-success ml-3 ml-lg-2 my-0 py-0 px-1 mr-3 mr-xl-0 d-flex flex-row justify-content-center align-items-center">Разместить
+                    объявление
+                </a>
+            </div>
+        </div>
+        <!-- right -->
+        <div class="d-lg-none collapse navbar-collapse position-absolute text-center bg-transparent p-2 collapse-right"
+             id="navbarToggler-right">
+            <button class="navbar-toggler w-100 text-right pr-0" type="button" data-toggle="collapse"
+                    data-target="#navbarToggler-right"
+                    aria-controls="navbarToggler-right" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler text-dark font-weight-normal position-relative close">&times;</span>
+            </button>
+            <div class="row d-lg-none text-center bg-light mb-5 border">
+                <div class="col px-3 py-sm-3">
+                    <div class="d-block w-75 text-white mx-auto bg-light p-3 mt-0">
+                        <p class="lead text-dark font-weight-bold">
+                            Войдите в <i class="fas fa-fish text-primary"></i><span
+                                class="logo font-italic">Jigga!</span>
+                        </p>
+                        <p class="text-muted mb-0 mb-sm-1">
+                            Jigga! — это сервис бесплатных объявлений,
+                            где обычные люди продают, находят и покупают вещи друг у друга.
+                        </p>
+                        <div class="row p-2 p-sm-5">
+                            <div class="col-6 px-1 py-1">
+                                <a href="#" class="btn btn-info w-100 text-white">
+                                    <i class="fab fa-vk"></i>
+                                </a>
+                            </div>
+                            <div class="col-6 px-1 py-1">
+                                <a href="#" class="btn btn-warning w-100 text-white">
+                                    <i class="fab fa-odnoklassniki"></i>
+                                </a>
+                            </div>
+                            <div class="col-12 px-1 py-1">
+                                <a href="#" class="btn btn-secondary w-100 text-white">
+                                    По номеру <br class="d-sm-none">телефона
+                                </a>
+                            </div>
+                            <div class="col-12 px-1 py-sm-3">
+                                <small class="text-muted">
+                                    Авторизуясь на сайте вы принимаете условия <a href="#">пользовательского
+                                    соглашения</a>
+                                    и <a href="#">политики конфиденциальности</a>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+<hr class="d-none d-lg-block">
+<!-- search -->
+<section id="search" class="container-fluid d-lg-none mt-2 ml-1 pr-4">
+    <div class="w-100 d-flex flex-row flex-nowrap justify-content-center align-items-center">
+        <form class="form-inline my-2 ml-1 w-100">
+            <a href="#" class="text-muted"><i class="fas fa-search pl-1"></i></a>
+            <input class="form-control mr-0 bg-light w-100" type="search" placeholder="Поиск" aria-label="search">
+        </form>
+        <a href="#" class="pl-1">
+            <i class="fas fa-sliders-h fa-2x"></i>
+        </a>
+    </div>
+</section>
+<!-- main section -->
+<section id="main" class="container-fluid px-4 text-center container-xl">
+    <!-- section breadcrumbs -->
+    <div class="row pt-2 pt-lg-4 d-none d-lg-block">
+        <div class="col-12 px-0">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0 bg-white">
+                    <li class="breadcrumb-item pl-0 small"><a href="index.html">Главная</a></li>
+                    <li class="breadcrumb-item active small" aria-current="page">Регистрация</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <hr class="d-none d-lg-block">
+    <h1 class="text-muted d-none d-sm-block">Регистрация</h1>
+    <h2 class="text-muted d-sm-none">Регистрация</h2>
+    <div class="row flex-column justify-content-center align-items-center">
+        <div class="col-11 col-sm-8 col-md-6 border border-radius py-3">
+            <p class="text-muted"><span class="text-danger">*</span> обязательные поля</p>
+            <form class="border border-radius px-1 py-3">
+                <div class="form-group w-75 mx-auto">
+                    <label for="InputName">Имя пользователя <span class="text-danger">*</span></label>
+                    <input type="name" class="form-control" id="InputName" required placeholder="имя">
+                </div>
+                <div class="form-group w-75 mx-auto">
+                    <label for="InputPassword">Пароль <span class="text-danger">*</span></label>
+                    <input type="password" class="form-control" id="InputPassword"  aria-describedby="passwordHelp" required placeholder="Пароль">
+                    <small id="passwordHelp" class="form-text text-muted">Минимальная длина пароля составляет 4 символа</small>
+                </div>
+                <div class="form-group w-75 mx-auto">
+                    <label for="InputPassword">Подвердите пароль <span class="text-danger">*</span></label>
+                    <input type="password" class="form-control" id="InputPassword" required placeholder="пароль">
+                </div>
+                <div class="form-group w-75 mx-auto">
+                    <label for="InputEmail">E-mail <span class="text-danger">*</span></label>
+                    <input type="email" class="form-control" id="InputEmail" required placeholder="e-mail">
+                </div>
+                <button type="submit" class="btn btn-light text-primary border-primary w-75 mt-4 mb-2">Регистрация</button>
+            </form>
+        </div>
+    </div>
+</section>
+<!-- end main -->
+<!-- footer -->
+<footer id="footer" class="container-fluid p-3 pt-5 container-xl">
+    <div class="footer-bottom border-top d-flex flex-column flex-lg-row flex-wrap justify-content-center justify-content-lg-between align-items-center py-3 mx-2">
+        <div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
+            <a href="#" class="text-muted pr-2">
+                Подписаться на уведомления
+            </a>
+            <a href="#" class="text-muted pr-2">
+                Лицензионные соглашения
+            </a>
+            <a href="#" class="text-muted pr-2">
+                Обратная связь
+            </a>
+            <a href="#" class="text-muted pr-2">
+                Помощь
+            </a>
+        </div>
+        <small class="text-muted">
+            2018 &copy; || Все права защищены
+        </small>
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script src="js/scripts-description.js"></script>
+</body>
+</html>
